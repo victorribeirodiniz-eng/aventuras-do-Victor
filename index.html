@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Busca pelo Cristal de Lúmen</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Cenário inicial: um mapa antigo">
+            <p>Você é um arqueólogo em busca do lendário "Cristal de Lúmen", um artefato que, dizem, ilumina os mistérios da natureza. Sua única pista é um pergaminho antigo que aponta para duas regiões no Brasil.</p>
+            <button class="btn-proximo" data-proximo="1">Chapada Diamantina (Bahia)</button>
+            <button class="btn-proximo" data-proximo="2">Serra da Capivara (Piauí)</button>
+        </div>
 
+        <div class="passo" id="passo-1">
+            <p>Você decide começar na Chapada Diamantina. A primeira indicação do pergaminho é procurar por uma trilha na cidade de Lençóis.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir a trilha mais famosa</button>
+            <button class="btn-proximo" data-proximo="4">Perguntar aos moradores locais sobre trilhas secretas</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Na Serra da Capivara, o pergaminho sugere que a próxima pista está escondida em um dos sítios arqueológicos com pinturas rupestres. Qual você visita primeiro?</p>
+            <button class="btn-proximo" data-proximo="5">Visitar o Sítio do Boqueirão da Pedra Furada</button>
+            <button class="btn-proximo" data-proximo="6">Explorar a Toca do Inferno</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>A trilha mais famosa leva você a uma bela cachoeira, mas o cristal não está lá. Você perde tempo precioso.</p>
+            <button class="btn-proximo" data-proximo="13">Desistir da busca</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e perguntar aos moradores</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Os moradores revelam uma trilha pouco conhecida que leva ao topo do Morro do Pai Inácio. Lá, você encontra uma marca que aponta para o próximo local: uma caverna em Goiás.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para Goiás</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No Sítio do Boqueirão da Pedra Furada, você decifra um símbolo pintado na rocha que indica a próxima pista: está em uma caverna em Goiás.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para Goiás</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>A Toca do Inferno é impressionante, mas não há nenhuma pista. A única coisa que você encontra é uma rota de volta para a cidade.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e tentar o Boqueirão da Pedra Furada</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Em Goiás, na região de Alto Paraíso, você encontra a caverna indicada. Dentro dela, há um rio subterrâneo que se divide em dois túneis.</p>
+            <button class="btn-proximo" data-proximo="9">Entrar no túnel da esquerda (mais estreito)</button>
+            <button class="btn-proximo" data-proximo="10">Entrar no túnel da direita (mais largo)</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Voltando ao Sítio do Boqueirão, você finalmente encontra o símbolo que aponta para o próximo destino: uma caverna em Goiás!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para Goiás</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>O túnel da esquerda é difícil, mas leva a uma câmara secreta onde o Cristal de Lúmen irradia uma luz suave, revelando a história de seus antigos guardiões.</p>
+            <button class="btn-proximo" data-proximo="11">Pegar o Cristal de Lúmen</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O túnel da direita é mais fácil de navegar, mas termina em uma grande lagoa subterrânea sem mais saídas. Você terá que voltar.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o túnel da esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cristal.png" alt="Arqueólogo segurando um cristal brilhante">
+            <p>Com o Cristal de Lúmen em mãos, você se torna o guardião de um conhecimento ancestral, prometendo proteger o artefato e o local de sua descoberta.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você retorna e, com mais cuidado, segue pelo túnel mais estreito à esquerda, encontrando a câmara secreta e o lendário Cristal de Lúmen!</p>
+            <button class="btn-proximo" data-proximo="11">Pegar o Cristal de Lúmen</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="img/cenario-passo13-desistencia.png" alt="Arqueólogo retornando para casa">
+            <p>A aventura parece arriscada e você decide voltar para casa. O Cristal de Lúmen permanece um mistério.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+📝 Observações
+Imagens (img/cenario-passoX.png): Usei nomes de arquivos de imagem genéricos. Você precisará criar ou usar as imagens correspondentes para que o jogo fique visualmente completo, substituindo o texto do atributo alt por imagens reais.
+
+CSS/JS: Mantive as referências a style.css e script.js, pois o jogo depende deles para a formatação e, crucialmente, para a lógica de navegação (mostrar/esconder os divs com a classe passo e trocar a classe ativo ao clicar nos botões btn-proximo).
+
+Qual das histórias você achou mais interessante? Quer que eu crie a lógica básica em JavaScript para o jogo funcionar no navegador?
